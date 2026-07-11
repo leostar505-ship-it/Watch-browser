@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string msgid="7032918537319714491" name="buttons_rect_bottom_center">"පහළ"</string>
+    <string msgid="1900303277997254019" name="buttons_rect_bottom_left">"පහළ-වම"</string>
+    <string msgid="5128261908141175352" name="buttons_rect_bottom_right">"පහළ දකුණ"</string>
+    <string msgid="2890382227404669440" name="buttons_rect_left_bottom">"පහළ, වම් පැත්ත"</string>
+    <string msgid="2090348335774325845" name="buttons_rect_left_center">"මැද වම"</string>
+    <string msgid="5658240954637179416" name="buttons_rect_left_top">"ඉහළ, වම් පැත්ත"</string>
+    <string msgid="231110280868923853" name="buttons_rect_right_bottom">"පහළ, දකුණු පැත්ත"</string>
+    <string msgid="9046922334870476704" name="buttons_rect_right_center">"දකුණේ මැද"</string>
+    <string msgid="8781047384037217975" name="buttons_rect_right_top">"ඉහළ, දකුණු පැත්ත"</string>
+    <string msgid="79705740801041383" name="buttons_rect_top_center">"ඉහළ"</string>
+    <string msgid="7572206729575579647" name="buttons_rect_top_left">"ඉහළ වම"</string>
+    <string msgid="942888900599091776" name="buttons_rect_top_right">"ඉහළ දකුණ"</string>
+    <string msgid="7330585893633364324" name="buttons_round_bottom_center">"පහළ"</string>
+    <string msgid="2128239325315047486" name="buttons_round_bottom_left">"පහළ-වම"</string>
+    <string msgid="8840562761052904241" name="buttons_round_bottom_left_lower">"පහළ වම, වඩා පහළ"</string>
+    <string msgid="5824161271890322696" name="buttons_round_bottom_left_upper">"පහළ වම, වඩා ඉහළ"</string>
+    <string msgid="2377403938095293895" name="buttons_round_bottom_right">"පහළ දකුණ"</string>
+    <string msgid="6450671993962362349" name="buttons_round_bottom_right_lower">"පහළ දකුණ, වඩා පහළ"</string>
+    <string msgid="3762205785832512542" name="buttons_round_bottom_right_upper">"පහළ දකුණ, වඩා ඉහළ"</string>
+    <string msgid="4851687456301428363" name="buttons_round_center_left">"මැද වම"</string>
+    <string msgid="1509579668330531551" name="buttons_round_center_right">"දකුණේ මැද"</string>
+    <string msgid="5559087816427379703" name="buttons_round_top_center">"ඉහළ"</string>
+    <string msgid="6011962751086201079" name="buttons_round_top_left">"ඉහළ වම"</string>
+    <string msgid="4749025344320804614" name="buttons_round_top_left_lower">"ඉහළ වම, වඩා පහළ"</string>
+    <string msgid="2546930425604677415" name="buttons_round_top_left_upper">"ඉහළ වම, වඩා ඉහළ"</string>
+    <string msgid="4871780374047139328" name="buttons_round_top_right">"ඉහළ දකුණ"</string>
+    <string msgid="49744844591556337" name="buttons_round_top_right_lower">"ඉහළ දකුණ, වඩා පහළ"</string>
+    <string msgid="5489914740902966147" name="buttons_round_top_right_upper">"ඉහළදකුණ, වඩා ඉහළ"</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"පිළිතුරු දෙ."</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"වීඩියෝ"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"ප්‍රතික්ෂේප ක"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"විසන්ධි කරන්න"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"එන ඇමතුම"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"කරගෙන යන ඇමතුම"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"එන ඇමතුමක් පරීක්ෂා කරන්න"</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">සබල කරන්න</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">ඔබ Google Play සේවා සබල කරන්නේ නම් මිස %1$s වැඩ නොකරනු ඇත.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Google Play සේවා සබල කරන්න</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">ස්ථාපනය කරන්න</string>
+    <string name="common_google_play_services_install_text">ඔබගේ ටැබ්ලට් පරිගණකයේ නැති Google Play සේවා නොමැතිව %1$s ධාවනය නොවනු ඇත.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Google Play සේවා ලබා ගන්න</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play සේවාවල ලබා ගත හැකි බව</string>
+    <string name="common_google_play_services_notification_ticker">Google Play සේවා දෝෂය</string>
+    <string name="common_google_play_services_unknown_issue">%1$s හට Google Play සේවා සමගින් ගැටලු ඇත. කරුණාකර නැවත උත්සාහ කරන්න.</string>
+    <string name="common_google_play_services_unsupported_text">ඔබගේ උපාංගය මගින් සහාය නොදක්වන, Google Play සේවා නොමැතිව %1$s ධාවනය නොවනු ඇත.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">යාවත්කාලීන කරන්න</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">Google Play සේවා යාවත්කාලීන කරන්නේ නොමැතිව %1$s ධාවනය නොවේ.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Google Play සේවා යාවත්කාලීන කරන්න</string>
+    <string name="common_google_play_services_updating_text">දැනට යාවත්කාලීන කරමින් ඇති, Google Play සේවා නොමැතිව %1$s ධාවනය නොවනු ඇත.</string>
+    <string name="common_google_play_services_wear_update_text">Google Play සේවාවල නව අනුවාදයක් අවශ්‍යයි. එය මද වේලාවකින් එය විසින්ම යාවත්කාලීන වනු ඇත.</string>
+    <string name="common_open_on_phone">දුරකථනය තුළ විවෘත කරන්න</string>
+    <string name="common_signin_button_text">පුරන්න</string>
+    <string name="common_signin_button_text_long">Google සමගින් පුරන්න</string>
+    <string msgid="6412144553299494336" name="confirmation_overlay_a11y_description_fail">"අසාර්ථකයි"</string>
+    <string msgid="8809042819843332546" name="confirmation_overlay_a11y_description_phone">"ඔබගේ දුරකථනයෙහි විවෘත කරන ලදි"</string>
+    <string msgid="2936753235333429892" name="confirmation_overlay_a11y_description_success">"සාර්ථකයි"</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="8863821639144537553" name="ws_action_drawer_content_description">"ක්‍රියාමාර්ග ලාච්චුව"</string>
+    <string msgid="777117228299084604" name="ws_navigation_drawer_content_description">"සංචාලන ලාච්චුව"</string>
+</resources>

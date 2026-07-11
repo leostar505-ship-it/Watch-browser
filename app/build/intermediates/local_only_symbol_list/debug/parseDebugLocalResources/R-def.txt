@@ -1,0 +1,16 @@
+R_DEF: Internal format may change without notice
+local
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable ic_refresh_cw90
+drawable ic_zoom_cw90
+id backButton
+id geckoview
+id refreshButton
+id zoomButton
+id zoomPanel
+id zoomSeekBar
+layout activity_main
+mipmap ic_launcher
+string app_name
+style WatchBrowserTheme

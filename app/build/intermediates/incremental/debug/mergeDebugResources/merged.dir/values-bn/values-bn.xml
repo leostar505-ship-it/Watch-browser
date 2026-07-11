@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string msgid="7032918537319714491" name="buttons_rect_bottom_center">"নিচে"</string>
+    <string msgid="1900303277997254019" name="buttons_rect_bottom_left">"বাঁদিকে নিচে"</string>
+    <string msgid="5128261908141175352" name="buttons_rect_bottom_right">"ডানদিকে নিচে"</string>
+    <string msgid="2890382227404669440" name="buttons_rect_left_bottom">"নিচে বাঁদিকে"</string>
+    <string msgid="2090348335774325845" name="buttons_rect_left_center">"মাঝখানে বাঁদিকে"</string>
+    <string msgid="5658240954637179416" name="buttons_rect_left_top">"উপরে, বাঁদিকে"</string>
+    <string msgid="231110280868923853" name="buttons_rect_right_bottom">"নিচে, ডানদিকে"</string>
+    <string msgid="9046922334870476704" name="buttons_rect_right_center">"মাঝখানে ডানদিকে"</string>
+    <string msgid="8781047384037217975" name="buttons_rect_right_top">"উপরে, ডানদিকে"</string>
+    <string msgid="79705740801041383" name="buttons_rect_top_center">"উপরে"</string>
+    <string msgid="7572206729575579647" name="buttons_rect_top_left">"বাঁদিকে উপরে"</string>
+    <string msgid="942888900599091776" name="buttons_rect_top_right">"ডানদিকে উপরে"</string>
+    <string msgid="7330585893633364324" name="buttons_round_bottom_center">"নিচে"</string>
+    <string msgid="2128239325315047486" name="buttons_round_bottom_left">"বাঁদিকে নিচে"</string>
+    <string msgid="8840562761052904241" name="buttons_round_bottom_left_lower">"বাঁদিকে নিচে, আরও নিচে"</string>
+    <string msgid="5824161271890322696" name="buttons_round_bottom_left_upper">"বাঁদিকে নিচে, আরও উঁচুতে"</string>
+    <string msgid="2377403938095293895" name="buttons_round_bottom_right">"ডানদিকে নিচে"</string>
+    <string msgid="6450671993962362349" name="buttons_round_bottom_right_lower">"ডানদিকে নিচে, আরও নিচে"</string>
+    <string msgid="3762205785832512542" name="buttons_round_bottom_right_upper">"ডানদিকে নিচে, আরও উঁচুতে"</string>
+    <string msgid="4851687456301428363" name="buttons_round_center_left">"মাঝখানে বাঁদিকে"</string>
+    <string msgid="1509579668330531551" name="buttons_round_center_right">"মাঝখানে ডানদিকে"</string>
+    <string msgid="5559087816427379703" name="buttons_round_top_center">"উপরে"</string>
+    <string msgid="6011962751086201079" name="buttons_round_top_left">"বাঁদিকে উপরে"</string>
+    <string msgid="4749025344320804614" name="buttons_round_top_left_lower">"বাঁদিকে উপরে, আরও নিচে"</string>
+    <string msgid="2546930425604677415" name="buttons_round_top_left_upper">"বাঁদিকে উপরে, আরও উঁচুতে"</string>
+    <string msgid="4871780374047139328" name="buttons_round_top_right">"ডানদিকে উপরে"</string>
+    <string msgid="49744844591556337" name="buttons_round_top_right_lower">"ডানদিকে উপরে, আরও নিচে"</string>
+    <string msgid="5489914740902966147" name="buttons_round_top_right_upper">"ডানদিকে উপরে, আরও উঁচুতে"</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"উত্তর দিন"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"ভিডিও"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"বাতিল করুন"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"কল কেটে দিন"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"ইনকামিং কল"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"চালু থাকা কল"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"ইনকামিং কল স্ক্রিনিং করা হচ্ছে"</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">সক্ষম করুন</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">আপনি Google Play পরিষেবা সক্ষম না করা পর্যন্ত %1$s কাজ করবে না।</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Google Play পরিষেবা সক্ষম করুন</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">ইনস্টল করুন</string>
+    <string name="common_google_play_services_install_text">Google Play পরিষেবা ছাড়া %1$s চলবে না, যা আপনার ডিভাইসে অনুপস্থিত।</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Google Play পরিষেবা পান</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play পরিষেবার উপলভ্যতা</string>
+    <string name="common_google_play_services_notification_ticker">Google Play পরিষেবার ত্রুটি</string>
+    <string name="common_google_play_services_unknown_issue">Google Play পরিষেবাগুলির সাথে %1$s এর সমস্যা হচ্ছে৷ অনুগ্রহ করে আবার চেষ্টা করুন৷</string>
+    <string name="common_google_play_services_unsupported_text">Google Play পরিষেবা ছাড়া %1$s চলবে না, যেটি আপনার ডিভাইসে সমর্থিত নয়৷</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">আপডেট করুন</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">আপনি Google Play পরিষেবা আপডেট না করা পর্যন্ত %1$s চলবে না।</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Google Play পরিষেবা আপডেট করুন</string>
+    <string name="common_google_play_services_updating_text">Google Play পরিষেবা ছাড়া %1$s চলবে না যা বর্তমানে আপডেট হচ্ছে।</string>
+    <string name="common_google_play_services_wear_update_text">Google Play পরিষেবার নতুন ভার্সন প্রয়োজন৷ খুব শীঘ্রই এটা নিজেই আপডেট হবে৷</string>
+    <string name="common_open_on_phone">ফোনে খুলুন</string>
+    <string name="common_signin_button_text">সাইন-ইন করুন</string>
+    <string name="common_signin_button_text_long">Google এর মাধ্যমে সাইন-ইন করুন</string>
+    <string msgid="6412144553299494336" name="confirmation_overlay_a11y_description_fail">"কাজটি করা যায়নি"</string>
+    <string msgid="8809042819843332546" name="confirmation_overlay_a11y_description_phone">"আপনার ফোনে খোলা হয়েছে"</string>
+    <string msgid="2936753235333429892" name="confirmation_overlay_a11y_description_success">"কাজটি সম্পূর্ণ হয়েছে"</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"৯৯৯+"</string>
+    <string msgid="8863821639144537553" name="ws_action_drawer_content_description">"অ্যাকশন ড্রয়ার"</string>
+    <string msgid="777117228299084604" name="ws_navigation_drawer_content_description">"নেভিগেশন ড্রয়ার"</string>
+</resources>

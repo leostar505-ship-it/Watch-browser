@@ -1,0 +1,1372 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.leo.watchbrowser"
+4    android:versionCode="6"
+5    android:versionName="1.4.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="30"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-feature android:name="android.hardware.type.watch" />
+11-->C:\Users\leost\Downloads\WatchBrowser-1.4.0\WatchBrowser\app\src\main\AndroidManifest.xml:4:5-64
+11-->C:\Users\leost\Downloads\WatchBrowser-1.4.0\WatchBrowser\app\src\main\AndroidManifest.xml:4:19-61
+12
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\Users\leost\Downloads\WatchBrowser-1.4.0\WatchBrowser\app\src\main\AndroidManifest.xml:5:5-67
+13-->C:\Users\leost\Downloads\WatchBrowser-1.4.0\WatchBrowser\app\src\main\AndroidManifest.xml:5:22-64
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->C:\Users\leost\Downloads\WatchBrowser-1.4.0\WatchBrowser\app\src\main\AndroidManifest.xml:6:5-79
+14-->C:\Users\leost\Downloads\WatchBrowser-1.4.0\WatchBrowser\app\src\main\AndroidManifest.xml:6:22-76
+15    <uses-permission android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS" />
+15-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:14:5-16:43
+15-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:15:9-69
+16    <uses-permission android:name="android.permission.WAKE_LOCK" />
+16-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:18:5-68
+16-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:18:22-65
+17    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+17-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:19:5-80
+17-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:19:22-77
+18
+19    <uses-feature
+19-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:21:5-23:36
+20        android:name="android.hardware.location"
+20-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:22:9-49
+21        android:required="false" />
+21-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:23:9-33
+22    <uses-feature
+22-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:24:5-26:36
+23        android:name="android.hardware.location.gps"
+23-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:25:9-53
+24        android:required="false" />
+24-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:26:9-33
+25    <uses-feature
+25-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:27:5-29:36
+26        android:name="android.hardware.touchscreen"
+26-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:28:9-52
+27        android:required="false" />
+27-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:29:9-33
+28    <uses-feature
+28-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:30:5-32:36
+29        android:name="android.hardware.camera"
+29-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:31:9-47
+30        android:required="false" />
+30-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:32:9-33
+31    <uses-feature
+31-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:33:5-35:36
+32        android:name="android.hardware.camera.autofocus"
+32-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:34:9-57
+33        android:required="false" />
+33-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:35:9-33
+34    <uses-feature
+34-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:36:5-38:36
+35        android:name="android.hardware.audio.low_latency"
+35-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:37:9-58
+36        android:required="false" />
+36-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:38:9-33
+37    <uses-feature
+37-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:39:5-41:36
+38        android:name="android.hardware.microphone"
+38-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:40:9-51
+39        android:required="false" />
+39-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:41:9-33
+40    <uses-feature
+40-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:42:5-44:36
+41        android:name="android.hardware.camera.any"
+41-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:43:9-51
+42        android:required="false" /> <!-- GeckoView requires OpenGL ES 2.0 -->
+42-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:44:9-33
+43    <uses-feature
+43-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:45:5-47:35
+44        android:glEsVersion="0x00020000"
+44-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:46:9-41
+45        android:required="true" />
+45-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:47:9-32
+46
+47    <permission
+47-->[androidx.core:core:1.17.0] C:\Users\leost\.gradle\caches\8.13\transforms\b071572d737d94c4ad9bdacc270967f5\transformed\core-1.17.0\AndroidManifest.xml:22:5-24:47
+48        android:name="com.leo.watchbrowser.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+48-->[androidx.core:core:1.17.0] C:\Users\leost\.gradle\caches\8.13\transforms\b071572d737d94c4ad9bdacc270967f5\transformed\core-1.17.0\AndroidManifest.xml:23:9-81
+49        android:protectionLevel="signature" />
+49-->[androidx.core:core:1.17.0] C:\Users\leost\.gradle\caches\8.13\transforms\b071572d737d94c4ad9bdacc270967f5\transformed\core-1.17.0\AndroidManifest.xml:24:9-44
+50
+51    <uses-permission android:name="com.leo.watchbrowser.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+51-->[androidx.core:core:1.17.0] C:\Users\leost\.gradle\caches\8.13\transforms\b071572d737d94c4ad9bdacc270967f5\transformed\core-1.17.0\AndroidManifest.xml:26:5-97
+51-->[androidx.core:core:1.17.0] C:\Users\leost\.gradle\caches\8.13\transforms\b071572d737d94c4ad9bdacc270967f5\transformed\core-1.17.0\AndroidManifest.xml:26:22-94
+52
+53    <application
+53-->C:\Users\leost\Downloads\WatchBrowser-1.4.0\WatchBrowser\app\src\main\AndroidManifest.xml:8:5-28:19
+54        android:allowBackup="true"
+54-->C:\Users\leost\Downloads\WatchBrowser-1.4.0\WatchBrowser\app\src\main\AndroidManifest.xml:9:9-35
+55        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+55-->[androidx.core:core:1.17.0] C:\Users\leost\.gradle\caches\8.13\transforms\b071572d737d94c4ad9bdacc270967f5\transformed\core-1.17.0\AndroidManifest.xml:28:18-86
+56        android:debuggable="true"
+57        android:enableOnBackInvokedCallback="false"
+57-->C:\Users\leost\Downloads\WatchBrowser-1.4.0\WatchBrowser\app\src\main\AndroidManifest.xml:12:9-52
+58        android:extractNativeLibs="false"
+59        android:icon="@mipmap/ic_launcher"
+59-->C:\Users\leost\Downloads\WatchBrowser-1.4.0\WatchBrowser\app\src\main\AndroidManifest.xml:10:9-43
+60        android:label="@string/app_name"
+60-->C:\Users\leost\Downloads\WatchBrowser-1.4.0\WatchBrowser\app\src\main\AndroidManifest.xml:11:9-41
+61        android:testOnly="true"
+62        android:theme="@style/WatchBrowserTheme" >
+62-->C:\Users\leost\Downloads\WatchBrowser-1.4.0\WatchBrowser\app\src\main\AndroidManifest.xml:13:9-49
+63        <meta-data
+63-->C:\Users\leost\Downloads\WatchBrowser-1.4.0\WatchBrowser\app\src\main\AndroidManifest.xml:15:9-17:36
+64            android:name="com.google.android.wearable.standalone"
+64-->C:\Users\leost\Downloads\WatchBrowser-1.4.0\WatchBrowser\app\src\main\AndroidManifest.xml:16:13-66
+65            android:value="true" />
+65-->C:\Users\leost\Downloads\WatchBrowser-1.4.0\WatchBrowser\app\src\main\AndroidManifest.xml:17:13-33
+66
+67        <activity
+67-->C:\Users\leost\Downloads\WatchBrowser-1.4.0\WatchBrowser\app\src\main\AndroidManifest.xml:19:9-27:20
+68            android:name="com.leo.watchbrowser.MainActivity"
+68-->C:\Users\leost\Downloads\WatchBrowser-1.4.0\WatchBrowser\app\src\main\AndroidManifest.xml:20:13-41
+69            android:exported="true"
+69-->C:\Users\leost\Downloads\WatchBrowser-1.4.0\WatchBrowser\app\src\main\AndroidManifest.xml:21:13-36
+70            android:windowSoftInputMode="adjustPan" >
+70-->C:\Users\leost\Downloads\WatchBrowser-1.4.0\WatchBrowser\app\src\main\AndroidManifest.xml:22:13-52
+71            <intent-filter>
+71-->C:\Users\leost\Downloads\WatchBrowser-1.4.0\WatchBrowser\app\src\main\AndroidManifest.xml:23:13-26:29
+72                <action android:name="android.intent.action.MAIN" />
+72-->C:\Users\leost\Downloads\WatchBrowser-1.4.0\WatchBrowser\app\src\main\AndroidManifest.xml:24:17-69
+72-->C:\Users\leost\Downloads\WatchBrowser-1.4.0\WatchBrowser\app\src\main\AndroidManifest.xml:24:25-66
+73
+74                <category android:name="android.intent.category.LAUNCHER" />
+74-->C:\Users\leost\Downloads\WatchBrowser-1.4.0\WatchBrowser\app\src\main\AndroidManifest.xml:25:17-77
+74-->C:\Users\leost\Downloads\WatchBrowser-1.4.0\WatchBrowser\app\src\main\AndroidManifest.xml:25:27-74
+75            </intent-filter>
+76        </activity>
+77
+78        <service
+78-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:50:9-56:19
+79            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab0"
+79-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:51:13-84
+80            android:enabled="true"
+80-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:52:13-35
+81            android:exported="false"
+81-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:53:13-37
+82            android:isolatedProcess="false"
+82-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:54:13-44
+83            android:process=":tab0" >
+83-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:55:13-36
+84        </service>
+85        <service
+85-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:57:9-63:19
+86            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab0"
+86-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:58:13-92
+87            android:enabled="true"
+87-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:59:13-35
+88            android:exported="false"
+88-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:60:13-37
+89            android:isolatedProcess="true"
+89-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:61:13-43
+90            android:process=":isolatedTab0" >
+90-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:62:13-44
+91        </service>
+92        <service
+92-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:64:9-70:19
+93            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab1"
+93-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:65:13-84
+94            android:enabled="true"
+94-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:66:13-35
+95            android:exported="false"
+95-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:67:13-37
+96            android:isolatedProcess="false"
+96-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:68:13-44
+97            android:process=":tab1" >
+97-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:69:13-36
+98        </service>
+99        <service
+99-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:71:9-77:19
+100            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab1"
+100-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:72:13-92
+101            android:enabled="true"
+101-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:73:13-35
+102            android:exported="false"
+102-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:74:13-37
+103            android:isolatedProcess="true"
+103-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:75:13-43
+104            android:process=":isolatedTab1" >
+104-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:76:13-44
+105        </service>
+106        <service
+106-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:78:9-84:19
+107            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab2"
+107-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:79:13-84
+108            android:enabled="true"
+108-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:80:13-35
+109            android:exported="false"
+109-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:81:13-37
+110            android:isolatedProcess="false"
+110-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:82:13-44
+111            android:process=":tab2" >
+111-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:83:13-36
+112        </service>
+113        <service
+113-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:85:9-91:19
+114            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab2"
+114-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:86:13-92
+115            android:enabled="true"
+115-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:87:13-35
+116            android:exported="false"
+116-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:88:13-37
+117            android:isolatedProcess="true"
+117-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:89:13-43
+118            android:process=":isolatedTab2" >
+118-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:90:13-44
+119        </service>
+120        <service
+120-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:92:9-98:19
+121            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab3"
+121-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:93:13-84
+122            android:enabled="true"
+122-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:94:13-35
+123            android:exported="false"
+123-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:95:13-37
+124            android:isolatedProcess="false"
+124-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:96:13-44
+125            android:process=":tab3" >
+125-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:97:13-36
+126        </service>
+127        <service
+127-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:99:9-105:19
+128            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab3"
+128-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:100:13-92
+129            android:enabled="true"
+129-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:101:13-35
+130            android:exported="false"
+130-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:102:13-37
+131            android:isolatedProcess="true"
+131-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:103:13-43
+132            android:process=":isolatedTab3" >
+132-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:104:13-44
+133        </service>
+134        <service
+134-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:106:9-112:19
+135            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab4"
+135-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:107:13-84
+136            android:enabled="true"
+136-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:108:13-35
+137            android:exported="false"
+137-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:109:13-37
+138            android:isolatedProcess="false"
+138-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:110:13-44
+139            android:process=":tab4" >
+139-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:111:13-36
+140        </service>
+141        <service
+141-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:113:9-119:19
+142            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab4"
+142-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:114:13-92
+143            android:enabled="true"
+143-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:115:13-35
+144            android:exported="false"
+144-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:116:13-37
+145            android:isolatedProcess="true"
+145-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:117:13-43
+146            android:process=":isolatedTab4" >
+146-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:118:13-44
+147        </service>
+148        <service
+148-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:120:9-126:19
+149            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab5"
+149-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:121:13-84
+150            android:enabled="true"
+150-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:122:13-35
+151            android:exported="false"
+151-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:123:13-37
+152            android:isolatedProcess="false"
+152-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:124:13-44
+153            android:process=":tab5" >
+153-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:125:13-36
+154        </service>
+155        <service
+155-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:127:9-133:19
+156            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab5"
+156-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:128:13-92
+157            android:enabled="true"
+157-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:129:13-35
+158            android:exported="false"
+158-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:130:13-37
+159            android:isolatedProcess="true"
+159-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:131:13-43
+160            android:process=":isolatedTab5" >
+160-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:132:13-44
+161        </service>
+162        <service
+162-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:134:9-140:19
+163            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab6"
+163-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:135:13-84
+164            android:enabled="true"
+164-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:136:13-35
+165            android:exported="false"
+165-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:137:13-37
+166            android:isolatedProcess="false"
+166-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:138:13-44
+167            android:process=":tab6" >
+167-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:139:13-36
+168        </service>
+169        <service
+169-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:141:9-147:19
+170            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab6"
+170-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:142:13-92
+171            android:enabled="true"
+171-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:143:13-35
+172            android:exported="false"
+172-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:144:13-37
+173            android:isolatedProcess="true"
+173-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:145:13-43
+174            android:process=":isolatedTab6" >
+174-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:146:13-44
+175        </service>
+176        <service
+176-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:148:9-154:19
+177            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab7"
+177-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:149:13-84
+178            android:enabled="true"
+178-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:150:13-35
+179            android:exported="false"
+179-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:151:13-37
+180            android:isolatedProcess="false"
+180-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:152:13-44
+181            android:process=":tab7" >
+181-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:153:13-36
+182        </service>
+183        <service
+183-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:155:9-161:19
+184            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab7"
+184-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:156:13-92
+185            android:enabled="true"
+185-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:157:13-35
+186            android:exported="false"
+186-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:158:13-37
+187            android:isolatedProcess="true"
+187-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:159:13-43
+188            android:process=":isolatedTab7" >
+188-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:160:13-44
+189        </service>
+190        <service
+190-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:162:9-168:19
+191            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab8"
+191-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:163:13-84
+192            android:enabled="true"
+192-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:164:13-35
+193            android:exported="false"
+193-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:165:13-37
+194            android:isolatedProcess="false"
+194-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:166:13-44
+195            android:process=":tab8" >
+195-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:167:13-36
+196        </service>
+197        <service
+197-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:169:9-175:19
+198            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab8"
+198-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:170:13-92
+199            android:enabled="true"
+199-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:171:13-35
+200            android:exported="false"
+200-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:172:13-37
+201            android:isolatedProcess="true"
+201-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:173:13-43
+202            android:process=":isolatedTab8" >
+202-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:174:13-44
+203        </service>
+204        <service
+204-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:176:9-182:19
+205            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab9"
+205-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:177:13-84
+206            android:enabled="true"
+206-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:178:13-35
+207            android:exported="false"
+207-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:179:13-37
+208            android:isolatedProcess="false"
+208-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:180:13-44
+209            android:process=":tab9" >
+209-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:181:13-36
+210        </service>
+211        <service
+211-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:183:9-189:19
+212            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab9"
+212-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:184:13-92
+213            android:enabled="true"
+213-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:185:13-35
+214            android:exported="false"
+214-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:186:13-37
+215            android:isolatedProcess="true"
+215-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:187:13-43
+216            android:process=":isolatedTab9" >
+216-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:188:13-44
+217        </service>
+218        <service
+218-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:190:9-196:19
+219            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab10"
+219-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:191:13-85
+220            android:enabled="true"
+220-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:192:13-35
+221            android:exported="false"
+221-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:193:13-37
+222            android:isolatedProcess="false"
+222-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:194:13-44
+223            android:process=":tab10" >
+223-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:195:13-37
+224        </service>
+225        <service
+225-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:197:9-203:19
+226            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab10"
+226-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:198:13-93
+227            android:enabled="true"
+227-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:199:13-35
+228            android:exported="false"
+228-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:200:13-37
+229            android:isolatedProcess="true"
+229-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:201:13-43
+230            android:process=":isolatedTab10" >
+230-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:202:13-45
+231        </service>
+232        <service
+232-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:204:9-210:19
+233            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab11"
+233-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:205:13-85
+234            android:enabled="true"
+234-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:206:13-35
+235            android:exported="false"
+235-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:207:13-37
+236            android:isolatedProcess="false"
+236-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:208:13-44
+237            android:process=":tab11" >
+237-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:209:13-37
+238        </service>
+239        <service
+239-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:211:9-217:19
+240            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab11"
+240-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:212:13-93
+241            android:enabled="true"
+241-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:213:13-35
+242            android:exported="false"
+242-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:214:13-37
+243            android:isolatedProcess="true"
+243-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:215:13-43
+244            android:process=":isolatedTab11" >
+244-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:216:13-45
+245        </service>
+246        <service
+246-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:218:9-224:19
+247            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab12"
+247-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:219:13-85
+248            android:enabled="true"
+248-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:220:13-35
+249            android:exported="false"
+249-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:221:13-37
+250            android:isolatedProcess="false"
+250-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:222:13-44
+251            android:process=":tab12" >
+251-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:223:13-37
+252        </service>
+253        <service
+253-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:225:9-231:19
+254            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab12"
+254-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:226:13-93
+255            android:enabled="true"
+255-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:227:13-35
+256            android:exported="false"
+256-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:228:13-37
+257            android:isolatedProcess="true"
+257-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:229:13-43
+258            android:process=":isolatedTab12" >
+258-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:230:13-45
+259        </service>
+260        <service
+260-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:232:9-238:19
+261            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab13"
+261-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:233:13-85
+262            android:enabled="true"
+262-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:234:13-35
+263            android:exported="false"
+263-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:235:13-37
+264            android:isolatedProcess="false"
+264-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:236:13-44
+265            android:process=":tab13" >
+265-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:237:13-37
+266        </service>
+267        <service
+267-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:239:9-245:19
+268            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab13"
+268-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:240:13-93
+269            android:enabled="true"
+269-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:241:13-35
+270            android:exported="false"
+270-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:242:13-37
+271            android:isolatedProcess="true"
+271-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:243:13-43
+272            android:process=":isolatedTab13" >
+272-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:244:13-45
+273        </service>
+274        <service
+274-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:246:9-252:19
+275            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab14"
+275-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:247:13-85
+276            android:enabled="true"
+276-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:248:13-35
+277            android:exported="false"
+277-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:249:13-37
+278            android:isolatedProcess="false"
+278-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:250:13-44
+279            android:process=":tab14" >
+279-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:251:13-37
+280        </service>
+281        <service
+281-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:253:9-259:19
+282            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab14"
+282-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:254:13-93
+283            android:enabled="true"
+283-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:255:13-35
+284            android:exported="false"
+284-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:256:13-37
+285            android:isolatedProcess="true"
+285-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:257:13-43
+286            android:process=":isolatedTab14" >
+286-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:258:13-45
+287        </service>
+288        <service
+288-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:260:9-266:19
+289            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab15"
+289-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:261:13-85
+290            android:enabled="true"
+290-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:262:13-35
+291            android:exported="false"
+291-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:263:13-37
+292            android:isolatedProcess="false"
+292-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:264:13-44
+293            android:process=":tab15" >
+293-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:265:13-37
+294        </service>
+295        <service
+295-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:267:9-273:19
+296            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab15"
+296-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:268:13-93
+297            android:enabled="true"
+297-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:269:13-35
+298            android:exported="false"
+298-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:270:13-37
+299            android:isolatedProcess="true"
+299-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:271:13-43
+300            android:process=":isolatedTab15" >
+300-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:272:13-45
+301        </service>
+302        <service
+302-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:274:9-280:19
+303            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab16"
+303-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:275:13-85
+304            android:enabled="true"
+304-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:276:13-35
+305            android:exported="false"
+305-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:277:13-37
+306            android:isolatedProcess="false"
+306-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:278:13-44
+307            android:process=":tab16" >
+307-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:279:13-37
+308        </service>
+309        <service
+309-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:281:9-287:19
+310            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab16"
+310-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:282:13-93
+311            android:enabled="true"
+311-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:283:13-35
+312            android:exported="false"
+312-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:284:13-37
+313            android:isolatedProcess="true"
+313-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:285:13-43
+314            android:process=":isolatedTab16" >
+314-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:286:13-45
+315        </service>
+316        <service
+316-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:288:9-294:19
+317            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab17"
+317-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:289:13-85
+318            android:enabled="true"
+318-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:290:13-35
+319            android:exported="false"
+319-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:291:13-37
+320            android:isolatedProcess="false"
+320-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:292:13-44
+321            android:process=":tab17" >
+321-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:293:13-37
+322        </service>
+323        <service
+323-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:295:9-301:19
+324            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab17"
+324-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:296:13-93
+325            android:enabled="true"
+325-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:297:13-35
+326            android:exported="false"
+326-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:298:13-37
+327            android:isolatedProcess="true"
+327-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:299:13-43
+328            android:process=":isolatedTab17" >
+328-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:300:13-45
+329        </service>
+330        <service
+330-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:302:9-308:19
+331            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab18"
+331-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:303:13-85
+332            android:enabled="true"
+332-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:304:13-35
+333            android:exported="false"
+333-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:305:13-37
+334            android:isolatedProcess="false"
+334-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:306:13-44
+335            android:process=":tab18" >
+335-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:307:13-37
+336        </service>
+337        <service
+337-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:309:9-315:19
+338            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab18"
+338-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:310:13-93
+339            android:enabled="true"
+339-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:311:13-35
+340            android:exported="false"
+340-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:312:13-37
+341            android:isolatedProcess="true"
+341-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:313:13-43
+342            android:process=":isolatedTab18" >
+342-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:314:13-45
+343        </service>
+344        <service
+344-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:316:9-322:19
+345            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab19"
+345-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:317:13-85
+346            android:enabled="true"
+346-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:318:13-35
+347            android:exported="false"
+347-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:319:13-37
+348            android:isolatedProcess="false"
+348-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:320:13-44
+349            android:process=":tab19" >
+349-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:321:13-37
+350        </service>
+351        <service
+351-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:323:9-329:19
+352            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab19"
+352-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:324:13-93
+353            android:enabled="true"
+353-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:325:13-35
+354            android:exported="false"
+354-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:326:13-37
+355            android:isolatedProcess="true"
+355-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:327:13-43
+356            android:process=":isolatedTab19" >
+356-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:328:13-45
+357        </service>
+358        <service
+358-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:330:9-336:19
+359            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab20"
+359-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:331:13-85
+360            android:enabled="true"
+360-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:332:13-35
+361            android:exported="false"
+361-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:333:13-37
+362            android:isolatedProcess="false"
+362-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:334:13-44
+363            android:process=":tab20" >
+363-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:335:13-37
+364        </service>
+365        <service
+365-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:337:9-343:19
+366            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab20"
+366-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:338:13-93
+367            android:enabled="true"
+367-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:339:13-35
+368            android:exported="false"
+368-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:340:13-37
+369            android:isolatedProcess="true"
+369-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:341:13-43
+370            android:process=":isolatedTab20" >
+370-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:342:13-45
+371        </service>
+372        <service
+372-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:344:9-350:19
+373            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab21"
+373-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:345:13-85
+374            android:enabled="true"
+374-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:346:13-35
+375            android:exported="false"
+375-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:347:13-37
+376            android:isolatedProcess="false"
+376-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:348:13-44
+377            android:process=":tab21" >
+377-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:349:13-37
+378        </service>
+379        <service
+379-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:351:9-357:19
+380            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab21"
+380-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:352:13-93
+381            android:enabled="true"
+381-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:353:13-35
+382            android:exported="false"
+382-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:354:13-37
+383            android:isolatedProcess="true"
+383-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:355:13-43
+384            android:process=":isolatedTab21" >
+384-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:356:13-45
+385        </service>
+386        <service
+386-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:358:9-364:19
+387            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab22"
+387-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:359:13-85
+388            android:enabled="true"
+388-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:360:13-35
+389            android:exported="false"
+389-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:361:13-37
+390            android:isolatedProcess="false"
+390-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:362:13-44
+391            android:process=":tab22" >
+391-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:363:13-37
+392        </service>
+393        <service
+393-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:365:9-371:19
+394            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab22"
+394-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:366:13-93
+395            android:enabled="true"
+395-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:367:13-35
+396            android:exported="false"
+396-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:368:13-37
+397            android:isolatedProcess="true"
+397-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:369:13-43
+398            android:process=":isolatedTab22" >
+398-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:370:13-45
+399        </service>
+400        <service
+400-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:372:9-378:19
+401            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab23"
+401-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:373:13-85
+402            android:enabled="true"
+402-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:374:13-35
+403            android:exported="false"
+403-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:375:13-37
+404            android:isolatedProcess="false"
+404-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:376:13-44
+405            android:process=":tab23" >
+405-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:377:13-37
+406        </service>
+407        <service
+407-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:379:9-385:19
+408            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab23"
+408-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:380:13-93
+409            android:enabled="true"
+409-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:381:13-35
+410            android:exported="false"
+410-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:382:13-37
+411            android:isolatedProcess="true"
+411-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:383:13-43
+412            android:process=":isolatedTab23" >
+412-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:384:13-45
+413        </service>
+414        <service
+414-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:386:9-392:19
+415            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab24"
+415-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:387:13-85
+416            android:enabled="true"
+416-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:388:13-35
+417            android:exported="false"
+417-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:389:13-37
+418            android:isolatedProcess="false"
+418-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:390:13-44
+419            android:process=":tab24" >
+419-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:391:13-37
+420        </service>
+421        <service
+421-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:393:9-399:19
+422            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab24"
+422-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:394:13-93
+423            android:enabled="true"
+423-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:395:13-35
+424            android:exported="false"
+424-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:396:13-37
+425            android:isolatedProcess="true"
+425-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:397:13-43
+426            android:process=":isolatedTab24" >
+426-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:398:13-45
+427        </service>
+428        <service
+428-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:400:9-406:19
+429            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab25"
+429-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:401:13-85
+430            android:enabled="true"
+430-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:402:13-35
+431            android:exported="false"
+431-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:403:13-37
+432            android:isolatedProcess="false"
+432-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:404:13-44
+433            android:process=":tab25" >
+433-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:405:13-37
+434        </service>
+435        <service
+435-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:407:9-413:19
+436            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab25"
+436-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:408:13-93
+437            android:enabled="true"
+437-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:409:13-35
+438            android:exported="false"
+438-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:410:13-37
+439            android:isolatedProcess="true"
+439-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:411:13-43
+440            android:process=":isolatedTab25" >
+440-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:412:13-45
+441        </service>
+442        <service
+442-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:414:9-420:19
+443            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab26"
+443-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:415:13-85
+444            android:enabled="true"
+444-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:416:13-35
+445            android:exported="false"
+445-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:417:13-37
+446            android:isolatedProcess="false"
+446-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:418:13-44
+447            android:process=":tab26" >
+447-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:419:13-37
+448        </service>
+449        <service
+449-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:421:9-427:19
+450            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab26"
+450-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:422:13-93
+451            android:enabled="true"
+451-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:423:13-35
+452            android:exported="false"
+452-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:424:13-37
+453            android:isolatedProcess="true"
+453-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:425:13-43
+454            android:process=":isolatedTab26" >
+454-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:426:13-45
+455        </service>
+456        <service
+456-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:428:9-434:19
+457            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab27"
+457-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:429:13-85
+458            android:enabled="true"
+458-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:430:13-35
+459            android:exported="false"
+459-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:431:13-37
+460            android:isolatedProcess="false"
+460-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:432:13-44
+461            android:process=":tab27" >
+461-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:433:13-37
+462        </service>
+463        <service
+463-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:435:9-441:19
+464            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab27"
+464-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:436:13-93
+465            android:enabled="true"
+465-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:437:13-35
+466            android:exported="false"
+466-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:438:13-37
+467            android:isolatedProcess="true"
+467-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:439:13-43
+468            android:process=":isolatedTab27" >
+468-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:440:13-45
+469        </service>
+470        <service
+470-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:442:9-448:19
+471            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab28"
+471-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:443:13-85
+472            android:enabled="true"
+472-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:444:13-35
+473            android:exported="false"
+473-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:445:13-37
+474            android:isolatedProcess="false"
+474-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:446:13-44
+475            android:process=":tab28" >
+475-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:447:13-37
+476        </service>
+477        <service
+477-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:449:9-455:19
+478            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab28"
+478-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:450:13-93
+479            android:enabled="true"
+479-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:451:13-35
+480            android:exported="false"
+480-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:452:13-37
+481            android:isolatedProcess="true"
+481-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:453:13-43
+482            android:process=":isolatedTab28" >
+482-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:454:13-45
+483        </service>
+484        <service
+484-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:456:9-462:19
+485            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab29"
+485-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:457:13-85
+486            android:enabled="true"
+486-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:458:13-35
+487            android:exported="false"
+487-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:459:13-37
+488            android:isolatedProcess="false"
+488-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:460:13-44
+489            android:process=":tab29" >
+489-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:461:13-37
+490        </service>
+491        <service
+491-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:463:9-469:19
+492            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab29"
+492-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:464:13-93
+493            android:enabled="true"
+493-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:465:13-35
+494            android:exported="false"
+494-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:466:13-37
+495            android:isolatedProcess="true"
+495-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:467:13-43
+496            android:process=":isolatedTab29" >
+496-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:468:13-45
+497        </service>
+498        <service
+498-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:470:9-476:19
+499            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab30"
+499-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:471:13-85
+500            android:enabled="true"
+500-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:472:13-35
+501            android:exported="false"
+501-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:473:13-37
+502            android:isolatedProcess="false"
+502-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:474:13-44
+503            android:process=":tab30" >
+503-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:475:13-37
+504        </service>
+505        <service
+505-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:477:9-483:19
+506            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab30"
+506-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:478:13-93
+507            android:enabled="true"
+507-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:479:13-35
+508            android:exported="false"
+508-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:480:13-37
+509            android:isolatedProcess="true"
+509-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:481:13-43
+510            android:process=":isolatedTab30" >
+510-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:482:13-45
+511        </service>
+512        <service
+512-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:484:9-490:19
+513            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab31"
+513-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:485:13-85
+514            android:enabled="true"
+514-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:486:13-35
+515            android:exported="false"
+515-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:487:13-37
+516            android:isolatedProcess="false"
+516-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:488:13-44
+517            android:process=":tab31" >
+517-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:489:13-37
+518        </service>
+519        <service
+519-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:491:9-497:19
+520            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab31"
+520-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:492:13-93
+521            android:enabled="true"
+521-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:493:13-35
+522            android:exported="false"
+522-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:494:13-37
+523            android:isolatedProcess="true"
+523-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:495:13-43
+524            android:process=":isolatedTab31" >
+524-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:496:13-45
+525        </service>
+526        <service
+526-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:498:9-504:19
+527            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab32"
+527-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:499:13-85
+528            android:enabled="true"
+528-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:500:13-35
+529            android:exported="false"
+529-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:501:13-37
+530            android:isolatedProcess="false"
+530-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:502:13-44
+531            android:process=":tab32" >
+531-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:503:13-37
+532        </service>
+533        <service
+533-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:505:9-511:19
+534            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab32"
+534-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:506:13-93
+535            android:enabled="true"
+535-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:507:13-35
+536            android:exported="false"
+536-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:508:13-37
+537            android:isolatedProcess="true"
+537-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:509:13-43
+538            android:process=":isolatedTab32" >
+538-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:510:13-45
+539        </service>
+540        <service
+540-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:512:9-518:19
+541            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab33"
+541-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:513:13-85
+542            android:enabled="true"
+542-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:514:13-35
+543            android:exported="false"
+543-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:515:13-37
+544            android:isolatedProcess="false"
+544-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:516:13-44
+545            android:process=":tab33" >
+545-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:517:13-37
+546        </service>
+547        <service
+547-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:519:9-525:19
+548            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab33"
+548-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:520:13-93
+549            android:enabled="true"
+549-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:521:13-35
+550            android:exported="false"
+550-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:522:13-37
+551            android:isolatedProcess="true"
+551-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:523:13-43
+552            android:process=":isolatedTab33" >
+552-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:524:13-45
+553        </service>
+554        <service
+554-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:526:9-532:19
+555            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab34"
+555-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:527:13-85
+556            android:enabled="true"
+556-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:528:13-35
+557            android:exported="false"
+557-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:529:13-37
+558            android:isolatedProcess="false"
+558-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:530:13-44
+559            android:process=":tab34" >
+559-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:531:13-37
+560        </service>
+561        <service
+561-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:533:9-539:19
+562            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab34"
+562-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:534:13-93
+563            android:enabled="true"
+563-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:535:13-35
+564            android:exported="false"
+564-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:536:13-37
+565            android:isolatedProcess="true"
+565-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:537:13-43
+566            android:process=":isolatedTab34" >
+566-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:538:13-45
+567        </service>
+568        <service
+568-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:540:9-546:19
+569            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab35"
+569-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:541:13-85
+570            android:enabled="true"
+570-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:542:13-35
+571            android:exported="false"
+571-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:543:13-37
+572            android:isolatedProcess="false"
+572-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:544:13-44
+573            android:process=":tab35" >
+573-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:545:13-37
+574        </service>
+575        <service
+575-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:547:9-553:19
+576            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab35"
+576-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:548:13-93
+577            android:enabled="true"
+577-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:549:13-35
+578            android:exported="false"
+578-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:550:13-37
+579            android:isolatedProcess="true"
+579-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:551:13-43
+580            android:process=":isolatedTab35" >
+580-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:552:13-45
+581        </service>
+582        <service
+582-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:554:9-560:19
+583            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab36"
+583-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:555:13-85
+584            android:enabled="true"
+584-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:556:13-35
+585            android:exported="false"
+585-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:557:13-37
+586            android:isolatedProcess="false"
+586-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:558:13-44
+587            android:process=":tab36" >
+587-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:559:13-37
+588        </service>
+589        <service
+589-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:561:9-567:19
+590            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab36"
+590-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:562:13-93
+591            android:enabled="true"
+591-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:563:13-35
+592            android:exported="false"
+592-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:564:13-37
+593            android:isolatedProcess="true"
+593-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:565:13-43
+594            android:process=":isolatedTab36" >
+594-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:566:13-45
+595        </service>
+596        <service
+596-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:568:9-574:19
+597            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab37"
+597-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:569:13-85
+598            android:enabled="true"
+598-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:570:13-35
+599            android:exported="false"
+599-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:571:13-37
+600            android:isolatedProcess="false"
+600-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:572:13-44
+601            android:process=":tab37" >
+601-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:573:13-37
+602        </service>
+603        <service
+603-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:575:9-581:19
+604            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab37"
+604-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:576:13-93
+605            android:enabled="true"
+605-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:577:13-35
+606            android:exported="false"
+606-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:578:13-37
+607            android:isolatedProcess="true"
+607-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:579:13-43
+608            android:process=":isolatedTab37" >
+608-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:580:13-45
+609        </service>
+610        <service
+610-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:582:9-588:19
+611            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab38"
+611-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:583:13-85
+612            android:enabled="true"
+612-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:584:13-35
+613            android:exported="false"
+613-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:585:13-37
+614            android:isolatedProcess="false"
+614-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:586:13-44
+615            android:process=":tab38" >
+615-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:587:13-37
+616        </service>
+617        <service
+617-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:589:9-595:19
+618            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab38"
+618-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:590:13-93
+619            android:enabled="true"
+619-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:591:13-35
+620            android:exported="false"
+620-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:592:13-37
+621            android:isolatedProcess="true"
+621-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:593:13-43
+622            android:process=":isolatedTab38" >
+622-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:594:13-45
+623        </service>
+624        <service
+624-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:596:9-602:19
+625            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$tab39"
+625-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:597:13-85
+626            android:enabled="true"
+626-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:598:13-35
+627            android:exported="false"
+627-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:599:13-37
+628            android:isolatedProcess="false"
+628-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:600:13-44
+629            android:process=":tab39" >
+629-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:601:13-37
+630        </service>
+631        <service
+631-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:603:9-609:19
+632            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$isolatedTab39"
+632-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:604:13-93
+633            android:enabled="true"
+633-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:605:13-35
+634            android:exported="false"
+634-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:606:13-37
+635            android:isolatedProcess="true"
+635-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:607:13-43
+636            android:process=":isolatedTab39" >
+636-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:608:13-45
+637        </service>
+638        <service
+638-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:610:9-616:19
+639            android:name="org.mozilla.gecko.media.MediaManager"
+639-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:611:13-64
+640            android:enabled="true"
+640-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:612:13-35
+641            android:exported="false"
+641-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:613:13-37
+642            android:isolatedProcess="false"
+642-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:614:13-44
+643            android:process=":media" >
+643-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:615:13-37
+644        </service>
+645        <service
+645-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:617:9-623:19
+646            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$gmplugin"
+646-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:618:13-88
+647            android:enabled="true"
+647-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:619:13-35
+648            android:exported="false"
+648-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:620:13-37
+649            android:isolatedProcess="false"
+649-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:621:13-44
+650            android:process=":gmplugin" >
+650-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:622:13-40
+651        </service>
+652        <service
+652-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:624:9-630:19
+653            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$socket"
+653-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:625:13-86
+654            android:enabled="true"
+654-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:626:13-35
+655            android:exported="false"
+655-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:627:13-37
+656            android:isolatedProcess="false"
+656-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:628:13-44
+657            android:process=":socket" >
+657-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:629:13-38
+658        </service>
+659        <service
+659-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:631:9-637:19
+660            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$gpu"
+660-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:632:13-83
+661            android:enabled="true"
+661-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:633:13-35
+662            android:exported="false"
+662-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:634:13-37
+663            android:isolatedProcess="false"
+663-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:635:13-44
+664            android:process=":gpu" >
+664-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:636:13-35
+665        </service>
+666        <service
+666-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:638:9-644:19
+667            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$rdd"
+667-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:639:13-83
+668            android:enabled="true"
+668-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:640:13-35
+669            android:exported="false"
+669-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:641:13-37
+670            android:isolatedProcess="false"
+670-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:642:13-44
+671            android:process=":rdd" >
+671-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:643:13-35
+672        </service>
+673        <service
+673-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:645:9-651:19
+674            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$utility"
+674-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:646:13-87
+675            android:enabled="true"
+675-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:647:13-35
+676            android:exported="false"
+676-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:648:13-37
+677            android:isolatedProcess="false"
+677-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:649:13-44
+678            android:process=":utility" >
+678-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:650:13-39
+679        </service>
+680        <service
+680-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:652:9-658:19
+681            android:name="org.mozilla.gecko.process.GeckoChildProcessServices$ipdlunittest"
+681-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:653:13-92
+682            android:enabled="true"
+682-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:654:13-35
+683            android:exported="false"
+683-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:655:13-37
+684            android:isolatedProcess="false"
+684-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:656:13-44
+685            android:process=":ipdlunittest" >
+685-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:657:13-44
+686        </service>
+687        <service
+687-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:659:9-666:19
+688            android:name="org.mozilla.gecko.crashhelper.CrashHelper"
+688-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:660:13-69
+689            android:enabled="true"
+689-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:661:13-35
+690            android:exported="false"
+690-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:662:13-37
+691            android:isolatedProcess="false"
+691-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:663:13-44
+692            android:process=":crashhelper"
+692-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:664:13-43
+693            android:stopWithTask="true" >
+693-->[org.mozilla.geckoview:geckoview-omni:145.0.20251124145406] C:\Users\leost\.gradle\caches\8.13\transforms\a35e20437b74d2c7bcd4ae7fb6ae81d8\transformed\geckoview-omni-145.0.20251124145406\AndroidManifest.xml:665:13-40
+694        </service>
+695
+696        <uses-library
+696-->[androidx.wear:wear:1.3.0] C:\Users\leost\.gradle\caches\8.13\transforms\be576b630d1c37062353fc6a682245a2\transformed\wear-1.3.0\AndroidManifest.xml:23:9-25:40
+697            android:name="com.google.android.wearable"
+697-->[androidx.wear:wear:1.3.0] C:\Users\leost\.gradle\caches\8.13\transforms\be576b630d1c37062353fc6a682245a2\transformed\wear-1.3.0\AndroidManifest.xml:24:13-55
+698            android:required="false" />
+698-->[androidx.wear:wear:1.3.0] C:\Users\leost\.gradle\caches\8.13\transforms\be576b630d1c37062353fc6a682245a2\transformed\wear-1.3.0\AndroidManifest.xml:25:13-37
+699
+700        <activity
+700-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\leost\.gradle\caches\8.13\transforms\e7ee6023c6cf5d9765af9d27da878dca\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:9-173
+701            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+701-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\leost\.gradle\caches\8.13\transforms\e7ee6023c6cf5d9765af9d27da878dca\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:19-85
+702            android:exported="false"
+702-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\leost\.gradle\caches\8.13\transforms\e7ee6023c6cf5d9765af9d27da878dca\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:146-170
+703            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+703-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\leost\.gradle\caches\8.13\transforms\e7ee6023c6cf5d9765af9d27da878dca\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:86-145
+704
+705        <meta-data
+705-->[com.google.android.gms:play-services-basement:18.5.0] C:\Users\leost\.gradle\caches\8.13\transforms\23bb8baa1592248eaa5d435bf7ee59ca\transformed\play-services-basement-18.5.0\AndroidManifest.xml:21:9-23:69
+706            android:name="com.google.android.gms.version"
+706-->[com.google.android.gms:play-services-basement:18.5.0] C:\Users\leost\.gradle\caches\8.13\transforms\23bb8baa1592248eaa5d435bf7ee59ca\transformed\play-services-basement-18.5.0\AndroidManifest.xml:22:13-58
+707            android:value="@integer/google_play_services_version" />
+707-->[com.google.android.gms:play-services-basement:18.5.0] C:\Users\leost\.gradle\caches\8.13\transforms\23bb8baa1592248eaa5d435bf7ee59ca\transformed\play-services-basement-18.5.0\AndroidManifest.xml:23:13-66
+708
+709        <provider
+709-->[androidx.lifecycle:lifecycle-process:2.9.4] C:\Users\leost\.gradle\caches\8.13\transforms\b0e9c3f13a5d87d2cf3d2813f23950dc\transformed\lifecycle-process-2.9.4\AndroidManifest.xml:24:9-32:20
+710            android:name="androidx.startup.InitializationProvider"
+710-->[androidx.lifecycle:lifecycle-process:2.9.4] C:\Users\leost\.gradle\caches\8.13\transforms\b0e9c3f13a5d87d2cf3d2813f23950dc\transformed\lifecycle-process-2.9.4\AndroidManifest.xml:25:13-67
+711            android:authorities="com.leo.watchbrowser.androidx-startup"
+711-->[androidx.lifecycle:lifecycle-process:2.9.4] C:\Users\leost\.gradle\caches\8.13\transforms\b0e9c3f13a5d87d2cf3d2813f23950dc\transformed\lifecycle-process-2.9.4\AndroidManifest.xml:26:13-68
+712            android:exported="false" >
+712-->[androidx.lifecycle:lifecycle-process:2.9.4] C:\Users\leost\.gradle\caches\8.13\transforms\b0e9c3f13a5d87d2cf3d2813f23950dc\transformed\lifecycle-process-2.9.4\AndroidManifest.xml:27:13-37
+713            <meta-data
+713-->[androidx.lifecycle:lifecycle-process:2.9.4] C:\Users\leost\.gradle\caches\8.13\transforms\b0e9c3f13a5d87d2cf3d2813f23950dc\transformed\lifecycle-process-2.9.4\AndroidManifest.xml:29:13-31:52
+714                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+714-->[androidx.lifecycle:lifecycle-process:2.9.4] C:\Users\leost\.gradle\caches\8.13\transforms\b0e9c3f13a5d87d2cf3d2813f23950dc\transformed\lifecycle-process-2.9.4\AndroidManifest.xml:30:17-78
+715                android:value="androidx.startup" />
+715-->[androidx.lifecycle:lifecycle-process:2.9.4] C:\Users\leost\.gradle\caches\8.13\transforms\b0e9c3f13a5d87d2cf3d2813f23950dc\transformed\lifecycle-process-2.9.4\AndroidManifest.xml:31:17-49
+716            <meta-data
+716-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\leost\.gradle\caches\8.13\transforms\96e1d9d61edaa8b196c987662563d01f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+717                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+717-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\leost\.gradle\caches\8.13\transforms\96e1d9d61edaa8b196c987662563d01f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+718                android:value="androidx.startup" />
+718-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\leost\.gradle\caches\8.13\transforms\96e1d9d61edaa8b196c987662563d01f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+719        </provider>
+720
+721        <receiver
+721-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\leost\.gradle\caches\8.13\transforms\96e1d9d61edaa8b196c987662563d01f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+722            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+722-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\leost\.gradle\caches\8.13\transforms\96e1d9d61edaa8b196c987662563d01f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+723            android:directBootAware="false"
+723-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\leost\.gradle\caches\8.13\transforms\96e1d9d61edaa8b196c987662563d01f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+724            android:enabled="true"
+724-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\leost\.gradle\caches\8.13\transforms\96e1d9d61edaa8b196c987662563d01f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+725            android:exported="true"
+725-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\leost\.gradle\caches\8.13\transforms\96e1d9d61edaa8b196c987662563d01f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+726            android:permission="android.permission.DUMP" >
+726-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\leost\.gradle\caches\8.13\transforms\96e1d9d61edaa8b196c987662563d01f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+727            <intent-filter>
+727-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\leost\.gradle\caches\8.13\transforms\96e1d9d61edaa8b196c987662563d01f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+728                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+728-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\leost\.gradle\caches\8.13\transforms\96e1d9d61edaa8b196c987662563d01f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+728-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\leost\.gradle\caches\8.13\transforms\96e1d9d61edaa8b196c987662563d01f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+729            </intent-filter>
+730            <intent-filter>
+730-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\leost\.gradle\caches\8.13\transforms\96e1d9d61edaa8b196c987662563d01f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+731                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+731-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\leost\.gradle\caches\8.13\transforms\96e1d9d61edaa8b196c987662563d01f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+731-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\leost\.gradle\caches\8.13\transforms\96e1d9d61edaa8b196c987662563d01f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+732            </intent-filter>
+733            <intent-filter>
+733-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\leost\.gradle\caches\8.13\transforms\96e1d9d61edaa8b196c987662563d01f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+734                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+734-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\leost\.gradle\caches\8.13\transforms\96e1d9d61edaa8b196c987662563d01f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+734-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\leost\.gradle\caches\8.13\transforms\96e1d9d61edaa8b196c987662563d01f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+735            </intent-filter>
+736            <intent-filter>
+736-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\leost\.gradle\caches\8.13\transforms\96e1d9d61edaa8b196c987662563d01f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+737                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+737-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\leost\.gradle\caches\8.13\transforms\96e1d9d61edaa8b196c987662563d01f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+737-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\leost\.gradle\caches\8.13\transforms\96e1d9d61edaa8b196c987662563d01f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+738            </intent-filter>
+739        </receiver>
+740    </application>
+741
+742</manifest>
